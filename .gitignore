@@ -1,7 +1,53 @@
-target/
+# Compiled class file
 *.class
+*.yml
+!deploy/buildspec.yml
+!deploy/buildspec-base.yml
+!deploy/buildspec-pr.yml
+!appspec.yml
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
 *.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+.settings
+.project
+.classpath
+target*
+.mvn*
+opt/apache*
 .idea/
 *.iml
+# properties files
+*.properties
+*.properties
+=======
+*.springBeans
+basic.auth.properties
+persistence.properties
+*.epoch
+*.lck
+*.DS_Store
+
+# untrack application.yml files
+src/main/resources/application-local.yml
+src/main/resources/application.yml
+.factorypath*
+
+tmps3files/
 .vscode/
-.DS_Store

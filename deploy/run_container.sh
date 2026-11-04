@@ -8,5 +8,5 @@ docker run -d \
   --name $CONTAINER_NAME \
   --restart unless-stopped \
   -p 8080:8080 \
-  -e SPRING_PROFILES_ACTIVE=${SPRING_PROFILES_ACTIVE:-default} \
+  -e SPRING_PROFILES_ACTIVE=${SPRING_PROFILES_ACTIVE:-prod} \
   $IMAGE

@@ -1,6 +1,5 @@
 # Compiled class file
 *.class
-*.yml
 !deploy/buildspec.yml
 !deploy/buildspec-base.yml
 !deploy/buildspec-pr.yml

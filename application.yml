@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: payment-service
+  datasource:
+    url: jdbc:postgresql://prod-db.internal:5432/payments
+    username: payments_admin
+    password: CTF{d4ngl1ng_c0mm1t5_n3v3r_d13}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+
+aws:
+  access-key-id: AKIAIOSFODNN7EXAMPLE
+  secret-access-key: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+  region: us-east-1
+  s3:
+    bucket: prod-payments-bucket
+
+jwt:
+  secret: sup3r_s3cr3t_jwt_k3y_d0_n0t_sh4re
+  expiration: 86400000
+
+server:
+  port: 8081

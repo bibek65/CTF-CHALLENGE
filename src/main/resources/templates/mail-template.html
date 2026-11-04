@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8"/>
+</head>
+<body style="font-family: Arial, sans-serif; color: #333;">
+    <div style="max-width: 600px; margin: auto; padding: 20px;">
+        <h2 th:text="${subject}">Notification</h2>
+        <p>Hi <span th:text="${recipientName}">User</span>,</p>
+        <p th:text="${body}">Message body goes here.</p>
+        <hr/>
+        <p style="font-size: 12px; color: #888;">
+            This is an automated message. Please do not reply.
+        </p>
+    </div>
+</body>
+</html>

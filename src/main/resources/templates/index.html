@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title th:text="${appName}">App</title>
+</head>
+<body>
+    <h1 th:text="'Welcome to ' + ${appName}">Welcome</h1>
+    <p>Application is running.</p>
+    <a th:href="@{/api/items}">View Items</a>
+</body>
+</html>

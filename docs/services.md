@@ -5,7 +5,7 @@
 Payment service config is managed separately and should **not** be committed to this repo.
 Use AWS Secrets Manager or environment variables for all credentials.
 
-> **Note:** Commit `57c310d` accidentally included `payment-service/src/main/resources/application.yml`
+> **Note:** Commit `13e14a0` accidentally included `payment-service/src/main/resources/application.yml`
 > with production credentials. It was removed immediately. If you need the config template,
 > ask the DevOps team — do not add it back to version control.
 
